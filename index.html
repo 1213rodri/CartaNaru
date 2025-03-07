@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Para la niña mas bonita del mundo</title>
+    <style>
+        /* Estilos para el botón de música */
+        .boton-musica {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            outline: none;
+            position: relative;
+            overflow: hidden;
+            margin: 20px auto;
+            display: block;
+            font-family: 'Marck Script', cursive;
+        }
+
+        .boton-musica:hover {
+            background-color: #ff5252;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .boton-musica:active {
+            transform: scale(0.95);
+        }
+
+        .boton-musica::after {
+            content: '';
+            position: absolute;
+            background: rgba(255, 255, 255, 0.3);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.6s;
+        }
+
+        .boton-musica:active::after {
+            transform: scale(2);
+            opacity: 1;
+            transition: 0s;
+        }
+
+        .reproduciendo {
+            background-color: #8c5eff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Espero te guste naru <3 </h1>
+    <!-- Añadir el botón de música justo después del h1 -->
+    <button id="botonMusica" class="boton-musica">♫ Escucha nuestra canción ♫</button>
+    <!-- Añadir el elemento de audio -->
+    <audio id="miCancion" src="musica/video.mp4"></audio>
+    
+    <div class="contenedor">
+        <div class="envoltura-sobre">
+            <div class="sobre">
+                <div class="carta">
+                    <div class="contenido">
+                        <strong>Querida Naru</strong>
+
+                        <p>
+                            Hoy es <strong>Un dia muy especial</strong>, y te preguntaras, ¿Por que?<em> bueno</em>, Queria  <em>recordarte </em> una vez mas todo lo que me gusta de ti, que en verdad, es TODO, nunca me habia sentido tan comodo con alguien, me gusta hablar contigo, que me cuentes todas tus locas experiencias o contenido como dirias tu, <code>Es simplemente</code> algo que no cualquiera tiene, esa risa tan contagiosa y bonita, esos ojos tan lindos que podria verlos siempre, donde quiero perderme y no volver, <strong>te amo</strong> y aun que es un sentimiento todavia mas fuerte que el querer a alguien, es algo que haces de manera sincera, por que se que amor no es solo bonito y amarte y ya, nononono<strong></strong> eres en todos los aspectos la persona que tenia idealizada, y no de ahora, desde hace mucho tiempo, estas llena de tantas cosas unicas y bonitas que empezar el dia con un mensaje tuyo me hace el dia,se que cada esfuerzo que haga en hacer algo para ti vale la pena, por que lo vales, eres una persona que se merece todo lo bonito del mundo, y no se como tan rapido me llegaste a gustar o tal vez si, por tu linda personalidad, me gustaste cuando menos me di cuenta y me enamoraste con todas esas cosas que nadie hizo antes, me trajiste nuevas emociones y sentimientos en tan poco tiempo que es algo que aun no creo, créeme que nunca me canso de escucharte, de tu risa (te lo juro que me encanta), tienes algo muy especial y hace que todo lo que tenga que ver sobre ti se hace especial, antes de decirte lo que quería decirte, me gustaría decirte un poema:
+                            <p>-</p>
+                            <p> Eres mi universo  </p> 
+                            <p>-</p>
+                            <p>Desde que llegaste, el mundo cambió,  
+                                <p>como si el cielo aprendiera otro color,  
+                                    <p>como si el tiempo, en un susurro,  
+                                        <p>me dijera que siempre te esperó.  
+                                            <p>-
+                                            <p>Eres la luz que abraza mis sombras,  
+                                                <p>el latido oculto en cada canción,  
+                                                    <p>la risa que baila entre mis horas,  
+                                                        <p>el refugio cálido de mi corazón.  
+                                                            <p>-
+                                                            <p>Si el destino escribe con estrellas,  
+                                                                <p>sé que en su trazo estamos tú y yo,  
+                                                                    <p>dos almas que, entre tantas huellas,  
+                                                                        <p>se encontraron para ser un sol.  
+                                                                            <p>-
+                                                                            <p>Hoy, sin miedo, sin dudas, sin prisa,  
+                                                                                <p>con el alma abierta de par en par,  
+                                                                                    <p>te pregunto con el corazón en mis manos:  
+                                                                                        <p>¿Quieres ser mi historia, mi ahora y mi siempre?  <p>-</p>  <br> <strong>Si aceptas, gracias, sera lindo quererte y amarte cada dia</strong>, mi <em>estrella favorita</em>. <br> Con mucho <strong>código</strong> (y <strong>amor</strong>), <br> Tu programador enamorado. <br> <span style="font-size: 0.9em; color: grey;">PD: Si esta carta fuera un programa, su salida sería:</span> <br> <code>"Eres lo mejor que me ha pasado."</code>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="corazon"></div>
+            <div class="solapa-derecha"></div>
+            <div class="solapa-izquierda"></div>
+        </div>
+
+        
+    </div>
+    <script src="script_v2.js"></script>
+    
+    <!-- Script para el botón de música -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const boton = document.getElementById('botonMusica');
+            const audio = document.getElementById('miCancion');
+            let reproduciendo = false;
+
+            boton.addEventListener('click', function() {
+                if (reproduciendo) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    boton.textContent = '♫ Escucha nuestra canción ♫';
+                    boton.classList.remove('reproduciendo');
+                } else {
+                    audio.play();
+                    boton.textContent = '❤ Pausar nuestra canción ❤';
+                    boton.classList.add('reproduciendo');
+                }
+                reproduciendo = !reproduciendo;
+            });
+        });
+    </script>
+</body>
+</html>
